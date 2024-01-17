@@ -90,8 +90,16 @@ h2{
     margin-top:-470px;
     margin-left:30px;
     width:200px;
+    padding-top:10px;
 }
 
-p{
+.Artist p{
     color: white;
+    font-size:16px;
+    padding:35px;
+    padding-top:0px;
+    color:black;
+}
+p{
+    color:white;
 }
