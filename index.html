@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techno Hour Agency - Artist Bookings</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+</head>
+<script>
+    // JavaScript code to change the image automatically
+    document.addEventListener("DOMContentLoaded", function () {
+        var headerImg = document.querySelector('header img');
+        var images = ['assets/abaro.jpg', 'assets/menno.jpg', 'assets/geenidee.jpg'];
+        var currentIndex = 0;
+
+        function changeImage() {
+            headerImg.style.opacity = 0; // Set opacity to 0 before changing the image
+            setTimeout(function () {
+                headerImg.src = images[currentIndex];
+                currentIndex = (currentIndex + 1) % images.length;
+                headerImg.style.opacity = 1; // Set opacity back to 1 after changing the image
+            }, 1000); // Use the same duration as the transition (1s = 1000ms)
+        }
+
+        // Change image every 5000 milliseconds (5 seconds)
+        setInterval(changeImage, 5000);
+    });
+</script>
+<body>
+    <header>
+        <div class="headerdiv">
+            <h1>Techno Hour</h1>
+            <img src="assets/abaro.jpg" alt="abaro">
+        </div>
+        <img class="logo" src="assets/Techonohour-logo.png" alt="logo">
+    </header>
+    <main>
+        <div class="container">
+            <div class="Artist">
+                <h1>Artists</h1>
+            </div>
+        </div>
+        <div class="container artist-container">
+            <div class="menno">
+                <img src="assets/menno.jpg" alt="menno">
+            </div>
+            <div class="info">
+                <h2>PreacherOne</h2>
+                <p>Hailing from the Netherlands, Hardtechno virtuoso PreacherOne is making waves as both a producer and DJ. With a signature sound fusing influences from Schranz to Psytrance, he's set to conquer the international stage under the banner of Techno Hour Agency. Brace yourself for a sonic journey that transcends borders, as PreacherOne delivers the raw energy of Hardtechno to audiences worldwide.</p>
+            </div>
+        </div>
+        <div class="container artist-container">
+            <div class="info">
+                <h2>Abaro</h2>
+                <p>Eindhoven boy, Abaro, sets his own mood with his unique style of producing, combined with DJ’ing, bringing fresh sounds to the dance floors. With his respective reputation, you know exactly what you can expect from him.</p>
+            </div>
+            <div class="menno">
+                <img src="assets/abaro.jpg" alt="abaro">
+            </div>
+            
+           
+        </div>
+        <div class="container artist-container">
+            <div class="menno">
+                <img src="assets/geenidee.jpg" alt="geenidee">
+            </div>
+            <div class="info">
+                <h2>J4cobus</h2>
+                <p>Ik ben een DJ en ik draai aan knoppen!</p>
+            </div>
+        </div>
+    </main>
+    <div class="Artist">
+        <h1>Booking Request</h1>
+        <button>Book</button>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+body{
+     background-color: black;
+     margin: 0;
+}
+p, h1, h2{
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+
+
+h1{
+    color: white;
+    font-size:80px;
+}
+header h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* background: black; */
+    font-family: 'Fondamento', cursive;
+    z-index: 2;
+}
+header{
+    margin: 0;
+}
+
+.headerdiv {
+    position: relative;
+}
+
+header img{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    transition: opacity 1s ease; /* Add transition property for opacity */
+    z-index: 1;
+}
+.container{
+    max-width: 2000px;
+    margin: 0 auto;
+}
+.Artist{
+    background: #9FA0FF;
+}
+.Artist h1{
+    padding: 35px;
+    font-size:35px;
+    color:black;
+}
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width:200px;
+    height:40px;
+    z-index: 2;
+    object-fit:contain;
+}
+h2{
+    font-size:35px;
+    padding-bottom:20px;
+    color:white;
+ 
+}
+.artist-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menno {
+    flex: 1;
+    margin-right: 20px; /* Adjust as needed */
+
+}
+.menno img{
+    object-fit: cover;
+    width:1000px;
+    height:650px;
+
+}
+
+.info {
+    flex: 2;
+    margin-top:-470px;
+    margin-left:30px;
+    width:200px;
+}
+
+p{
+    color: white;
+}
